@@ -1,0 +1,439 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.4.1
+# Built for Windows32
+# Copyright (C) 1988-2023 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sun Apr 19 19:52:41 2026
+
+# Variables
+
+# environment
+SYSTEMDRIVE = C:
+# environment
+LC_ALL = C
+# environment
+USERPROFILE = C:\Users\PC
+# environment
+LOCALAPPDATA = C:\Users\PC\AppData\Local
+# environment
+VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
+# environment
+VSCODE_CWD = C:\Users\PC\AppData\Local\Programs\Microsoft VS Code
+# makefile (from 'Makefile', line 1)
+PYTHON := python
+# environment
+SYSTEMROOT = C:\Windows
+# environment
+PROCESSOR_LEVEL = 25
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\PowerShell\Modules\
+# default
+MAKE_COMMAND := make.exe
+# environment
+CUDA_PATH_V11_2 = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2
+# environment
+OTEL_INSTRUMENTATION_GENAI_CAPTURE_MESSAGE_CONTENT = true
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_8188_CNZLGWGMMCNJPQTP
+# environment
+COPILOT_OTEL_EXPORTER_TYPE = file
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# automatic
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\PC\AppData\Roaming\Code\CachedData\560a9dba96f961efea7b1612916f89e5d5d4d679
+# environment
+LANG = C
+# default
+.LOADED := 
+# environment
+TMP = C:\Users\PC\AppData\Local\Temp
+# default
+.INCLUDE_DIRS := .
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# makefile
+MAKEFLAGS = pqrR
+# environment
+ONEDRIVE = C:\Users\PC\OneDrive
+# makefile
+CURDIR := d:/teaching/Teaching Lecturer/Spring 2026/Data Science/Lectures/10/Lecture10_Example
+# environment
+LM_LICENSE_FILE = C:\flexlm\LICENSE.TXT
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+VSCODE_L10N_BUNDLE_LOCATION = 
+# automatic
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# environment
+COPILOT_OTEL_FILE_EXPORTER_PATH = \\.\nul
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_PID = 8188
+# environment
+CUDA_PATH = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2
+# automatic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# automatic
+*F = $(notdir $*)
+# automatic
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# environment
+VSCODE_NLS_CONFIG = {"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"C:\\Users\\PC\\AppData\\Local\\Programs\\Microsoft VS Code\\560a9dba96\\resources\\app\\out\\nls.messages.json","locale":"en-us","availableLanguages":{}}
+# environment
+ONEDRIVECONSUMER = C:\Users\PC\OneDrive
+# default
+MAKE_HOST := Windows32
+# environment
+PROGRAMDATA = C:\ProgramData
+# default
+SHELL := C:/Program Files/Git/bin/sh.exe
+# environment
+HOMEPATH = \Users\PC
+# default
+MAKECMDGOALS := all
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+COMSPEC = C:\Windows\system32\cmd.exe
+# environment
+WINDIR = C:\Windows
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = C:\Users\PC\AppData\Local\Programs\Microsoft VS Code;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\NVIDIA Corporation\Nsight Compute 2020.3.1\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Users\PC\anaconda3\Lib\site-packages\cvxopt;C:\Users\PC\anaconda3\Library\mingw-w64\bin;C:\Users\PC\anaconda3\Library\bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Graphviz\bin;C:\Users\PC\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\PC\AppData\Local\Programs\Python\Python313\;C:\Users\PC\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\PC\AppData\Local\Programs\Python\Python312\;C:\Users\PC\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Arduino;C:\Users\PC\anaconda3;C:\Users\PC\anaconda3\Scripts;C:\Users\PC\anaconda3\Library;C:\Users\PC\anaconda3\Library\bin;C:\Users\PC\anaconda3\Library\mingw-w64\bin;C:\Program Files\Git\bin;C:\Users\PC\AppData\Local\Programs\Microsoft VS Code\bin;C:\msys64\mingw64\bin;C:\Users\PC\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Users\PC\AppData\Local\Programs\Fiddler;C:\modeltech64_10.6d\win64;C:\intelFPGA\22.1std\questa_fse\win64;C:\intelFPGA_lite\18.1\modelsim_ase\win32aloem;C:\Users\PC\anaconda3\Library\bin;C:\Users\PC\anaconda3\Lib\site-packages\cvxopt;C:\Users\PC\anaconda3\Library\mingw-w64\bin;C:\Users\PC\anaconda3\Lib\site-packages\cvxopt;C:\Users\PC\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\PC\AppData\Local\Programs\Ollama;C:\Users\PC\AppData\Local\Microsoft\WinGet\Packages\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\bin;C:\Program Files (x86)\GnuWin32\bin;
+# environment
+COMPUTERNAME = ANGELINA
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# environment
+PROMPT = $P$G
+# environment
+NVTOOLSEXT_PATH = C:\Program Files\NVIDIA Corporation\NvToolsExt\
+# environment
+APPLICATION_INSIGHTS_NO_STATSBEAT = true
+# environment
+LOGONSERVER = \\ANGELINA
+# environment
+QSYS_ROOTDIR = C:\intelFPGA_lite\18.1\quartus\sopc_builder\bin
+# environment
+USERNAME = PC
+# environment
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# automatic
+?F = $(notdir $?)
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# automatic
++F = $(notdir $+)
+# environment
+USERDOMAIN = ANGELINA
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+OS = Windows_NT
+# environment
+__COMPAT_LAYER = DetectorsAppHealth
+# environment
+AMDRMSDKPATH = C:\Program Files\AMD\RyzenMasterSDK\
+# makefile
+.DEFAULT_GOAL := help
+# default
+MAKE_VERSION := 4.4.1
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# environment
+NVCUDASAMPLES_ROOT = C:\ProgramData\NVIDIA Corporation\CUDA Samples\v11.2
+# environment
+USERDOMAIN_ROAMINGPROFILE = ANGELINA
+# environment
+NUMBER_OF_PROCESSORS = 12
+# environment
+PUBLIC = C:\Users\Public
+# environment
+QUARTUS_ROOTDIR = C:\intelFPGA_lite\18.1\quartus
+# environment
+SOPC_KIT_NIOS2 = C:\intelFPGA_lite\18.1\nios2eds
+# environment
+APPDATA = C:\Users\PC\AppData\Roaming
+# environment
+HOMEDRIVE = C:
+# environment
+COPILOT_OTEL_ENABLED = true
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+TEMP = C:\Users\PC\AppData\Local\Temp
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\ccdd4d73-1.116.0-main-sock
+# environment
+NVCUDASAMPLES11_2_ROOT = C:\ProgramData\NVIDIA Corporation\CUDA Samples\v11.2
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+SESSIONNAME = Console
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs notintermediate shell-export archives jobserver output-sync load dospaths
+# environment
+PROCESSOR_REVISION = 2100
+# environment
+VSCODE_ESM_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+PROCESSOR_IDENTIFIER = AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD
+# variable set hash-table stats:
+# Load=106/1024=10%, Rehash=0, Collisions=12/138=9%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (key d:/teaching/Teaching Lecturer/Spring 2026/Data Science/Lectures/10/Lecture10_Example, mtime 1776621159): 14 files, no impossibilities.
+
+# 14 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+check:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 49):
+	black --check src/
+
+models/model.pkl: data/processed/clean_customers.csv configs/config.toml src/models/train.py
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 39):
+	$(PYTHON) src/models/train.py --config configs/config.toml
+
+setup:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := setup
+# automatic
+# * := 
+# automatic
+# < := 
+# automatic
+# + := 
+# automatic
+# % := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=3/13=23%
+#  recipe to execute (from 'Makefile', line 22):
+	$(PYTHON) -m pip install -r requirements.txt
+	$(PYTHON) -m pip install -e .
+
+# Not a target:
+src/models/train.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+reports: reports/metrics.json
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+lint:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 52):
+	flake8 src/
+
+train: models/model.pkl
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2026-04-19 19:45:34
+#  File has been updated.
+#  Successfully updated.
+
+reports/metrics.json: data/processed/clean_customers.csv configs/config.toml src/models/train.py
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 39):
+	$(PYTHON) src/models/train.py --config configs/config.toml
+
+# Not a target:
+src/data/preprocess.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 59):
+	rm -rf data/processed/ models/ reports/ __pycache__ src/**/__pycache__
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: setup isort check lint format train
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+
+help:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 8):
+	@echo "Available commands:"
+	@echo "  make setup    - Install dependencies"
+	@echo "  make data     - Preprocess raw data"
+	@echo "  make train    - Train the model"
+	@echo "  make reports      - Run full pipeline (data → train)"
+	@echo "  make format   - Auto-format code with Black"
+	@echo "  make check    - Check formatting without changing files"
+	@echo "  make clean    - Delete generated files"
+	@echo "  make lint     - Run linter"
+	@echo "  make isort    - Sort imports with isort"
+	@echo "  make all      - Run everything (setup, format, check, lint, train)"
+
+data: data/processed/clean_customers.csv
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+configs/config.toml:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+data/processed/clean_customers.csv: data/raw/customers.csv configs/config.toml src/data/preprocess.py
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 32):
+	$(PYTHON) src/data/preprocess.py --config configs/config.toml
+
+# Not a target:
+data/raw/customers.csv:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+format:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 46):
+	black src/
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: help setup format check clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+isort:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 55):
+	isort src/
+
+# files hash-table stats:
+# Load=22/1024=2%, Rehash=0, Collisions=0/64=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 34 / storage = 377 B / avg = 11 B
+# current buf: size = 8174 B / used = 377 B / count = 34 / avg = 11 B
+
+# strcache performance: lookups = 72 / hit rate = 52%
+# hash-table stats:
+# Load=34/8192=0%, Rehash=0, Collisions=0/72=0%
+# Finished Make data base on Sun Apr 19 19:52:41 2026
+
+ 

@@ -7,3 +7,4 @@ src/data/__init__.py
 src/data/preprocess.py
 src/models/__init__.py
 src/models/train.py
+tests/test_preprocessing.py

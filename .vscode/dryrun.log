@@ -1,0 +1,15 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory 'd:/teaching/Teaching Lecturer/Spring 2026/Data Science/Lectures/10/Lecture10_Example'
+echo "Available commands:"
+echo "  make setup    - Install dependencies"
+echo "  make data     - Preprocess raw data"
+echo "  make train    - Train the model"
+echo "  make reports      - Run full pipeline (data → train)"
+echo "  make format   - Auto-format code with Black"
+echo "  make check    - Check formatting without changing files"
+echo "  make clean    - Delete generated files"
+echo "  make lint     - Run linter"
+echo "  make isort    - Sort imports with isort"
+echo "  make all      - Run everything (setup, format, check, lint, train)"
+make: Leaving directory 'd:/teaching/Teaching Lecturer/Spring 2026/Data Science/Lectures/10/Lecture10_Example'
+ 

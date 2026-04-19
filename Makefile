@@ -1,7 +1,7 @@
 PYTHON := python
 
 # ── Phony targets (not real files) ───────────────────────────────────────────
-.PHONY: help setup format check clean
+.PHONY: help setup format check clean lint isort test all reports data train 
 
 # Default target when you just type "make"
 help:
@@ -16,13 +16,14 @@ help:
 	@echo "  make lint     - Run linter"
 	@echo "  make isort    - Sort imports with isort"
 	@echo "  make all      - Run everything (setup, format, check, lint, train)"
+	@echo "  make test     - Run tests"
 
 # ── Setup ─────────────────────────────────────────────────────────────────────
 setup:
 	$(PYTHON) -m pip install -r requirements.txt
 	$(PYTHON) -m pip install -e .
 
-all: setup isort check lint format train 
+all: isort format check lint test reports 
 
 # ── Pipeline (file targets — Make skips if already up to date) ───────────────
 reports: reports/metrics.json
@@ -54,6 +55,8 @@ lint:
 isort:
 	isort src/
 
+test:
+	pytest tests/ -v
 # ── Cleanup ───────────────────────────────────────────────────────────────────
 clean:
 	rm -rf data/processed/ models/ reports/ __pycache__ src/**/__pycache__
