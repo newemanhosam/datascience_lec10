@@ -1,7 +1,7 @@
 .env
 __pycache__/
 *.pyc
-models/
+/models/
 data/processed/
 reports/
 .pytest_cache/
