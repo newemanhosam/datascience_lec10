@@ -2,11 +2,13 @@
 
 import argparse
 import json
+import os
 import pickle
 import tomllib
 from pathlib import Path
 
 import pandas as pd
+from dotenv import load_dotenv
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, f1_score
 from sklearn.model_selection import train_test_split
@@ -59,6 +61,15 @@ def save_metrics(metrics: dict, filepath: str) -> None:
 
 
 if __name__ == "__main__":
+    # Load environment variables from .env
+    load_dotenv(Path(__file__).parent.parent.parent / ".env")
+
+    environment = os.getenv("ENVIRONMENT", "development")
+    model_version = os.getenv("MODEL_VERSION", "v1")
+
+    print(f"Environment : {environment}")
+    print(f"Model version: {model_version}")
+
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", default="configs/config.toml")
     args = parser.parse_args()
@@ -82,5 +93,9 @@ if __name__ == "__main__":
     model = train_model(X_train, y_train, config)
     metrics = evaluate_model(model, X_test, y_test)
 
-    save_model(model, config["model"]["model_output_path"])
+    model_dir = config["model"]["model_output_path"].rsplit("/", 1)[0]
+    model_path = f"{model_dir}/model_{model_version}.pkl"
+    save_model(model, model_path)
+
+    # save_model(model, config["model"]["model_output_path"])
     save_metrics(metrics, config["reports"]["metrics_path"])

@@ -1,4 +1,4 @@
-PYTHON := python3
+PYTHON := python
 
 # ── Phony targets (not real files) ───────────────────────────────────────────
 .PHONY: help setup format check clean
@@ -9,27 +9,33 @@ help:
 	@echo "  make setup    - Install dependencies"
 	@echo "  make data     - Preprocess raw data"
 	@echo "  make train    - Train the model"
-	@echo "  make all      - Run full pipeline (data → train)"
+	@echo "  make reports      - Run full pipeline (data → train)"
 	@echo "  make format   - Auto-format code with Black"
 	@echo "  make check    - Check formatting without changing files"
 	@echo "  make clean    - Delete generated files"
+	@echo "  make lint     - Run linter"
+	@echo "  make isort    - Sort imports with isort"
+	@echo "  make all      - Run everything (setup, format, check, lint, train)"
 
 # ── Setup ─────────────────────────────────────────────────────────────────────
 setup:
 	$(PYTHON) -m pip install -r requirements.txt
+	$(PYTHON) -m pip install -e .
+
+all: setup isort check lint format train 
 
 # ── Pipeline (file targets — Make skips if already up to date) ───────────────
-all: reports/metrics.json
+reports: reports/metrics.json
 
 # Step 1: preprocess — reruns only if raw CSV changed
-data/processed/clean_customers.csv: data/raw/customers.csv configs/config.toml
+data/processed/clean_customers.csv: data/raw/customers.csv configs/config.toml src/data/preprocess.py
 	$(PYTHON) src/data/preprocess.py --config configs/config.toml
 
 # Friendly alias
 data: data/processed/clean_customers.csv
 
 # Step 2: train — reruns only if processed data or config changed
-models/model.pkl reports/metrics.json: data/processed/clean_customers.csv configs/config.toml
+models/model.pkl reports/metrics.json: data/processed/clean_customers.csv configs/config.toml src/models/train.py
 	$(PYTHON) src/models/train.py --config configs/config.toml
 
 # Friendly alias
@@ -41,6 +47,12 @@ format:
 
 check:
 	black --check src/
+
+lint:
+	flake8 src/
+
+isort:
+	isort src/
 
 # ── Cleanup ───────────────────────────────────────────────────────────────────
 clean:

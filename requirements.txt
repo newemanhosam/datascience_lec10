@@ -1,0 +1,8 @@
+scikit-learn
+pandas
+toml
+numpy
+python-dotenv
+black
+flake8
+isort

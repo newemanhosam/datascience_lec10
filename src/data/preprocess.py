@@ -5,6 +5,7 @@ import tomllib
 from pathlib import Path
 
 import pandas as pd
+from sympy import python
 
 
 def load_raw_data(filepath: str) -> pd.DataFrame:
@@ -27,8 +28,15 @@ def save_data(df: pd.DataFrame, filepath: str) -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+    # This lets you pass arguments from the terminal to your script, instead of hardcoding them inside.
+    # without argparse you'd hardcode the path inside the script
+    # with argparse you can pass it from outside:
+    # python src/data/preprocess.py --config configs/config.toml
+    # python src/data/preprocess.py --config configs/config_v2.toml  # easy to swap!
     parser.add_argument("--config", default="configs/config.toml")
     args = parser.parse_args()
+
+    print("args", args.config)
 
     with open(args.config, "rb") as f:
         config = tomllib.load(f)
