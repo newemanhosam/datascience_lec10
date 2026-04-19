@@ -1,0 +1,16 @@
+[data]
+raw_data_path = "data/raw/customers.csv"
+processed_data_path = "data/processed/clean_customers.csv"
+feature_columns = ["age", "balance", "tenure", "transaction_count"]
+target_column = "churn"
+test_size = 0.2
+random_state = 42
+
+[model]
+type = "random_forest"
+n_estimators = 100
+max_depth = 5
+model_output_path = "models/model.pkl"
+
+[reports]
+metrics_path = "reports/metrics.json"
