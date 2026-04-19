@@ -11,5 +11,6 @@ echo "  make clean    - Delete generated files"
 echo "  make lint     - Run linter"
 echo "  make isort    - Sort imports with isort"
 echo "  make all      - Run everything (setup, format, check, lint, train)"
+echo "  make test     - Run tests"
 make: Leaving directory 'd:/teaching/Teaching Lecturer/Spring 2026/Data Science/Lectures/10/Lecture10_Example'
  

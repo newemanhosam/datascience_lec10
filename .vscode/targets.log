@@ -6,7 +6,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Apr 19 19:52:41 2026
+# Make data base, printed on Sun Apr 19 21:21:31 2026
 
 # Variables
 
@@ -39,7 +39,7 @@ OTEL_INSTRUMENTATION_GENAI_CAPTURE_MESSAGE_CONTENT = true
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_8188_CNZLGWGMMCNJPQTP
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_21012_EBHBEBOVKKSVRQGD
 # environment
 COPILOT_OTEL_EXPORTER_TYPE = file
 # environment
@@ -74,8 +74,6 @@ CURDIR := d:/teaching/Teaching Lecturer/Spring 2026/Data Science/Lectures/10/Lec
 LM_LICENSE_FILE = C:\flexlm\LICENSE.TXT
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
-# environment
-VSCODE_L10N_BUNDLE_LOCATION = 
 # automatic
 *D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
 # environment
@@ -95,7 +93,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 8188
+VSCODE_PID = 21012
 # environment
 CUDA_PATH = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2
 # automatic
@@ -105,7 +103,8 @@ CUDA_PATH = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2
 # automatic
 <D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
 # environment
-VSCODE_NLS_CONFIG = {"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"C:\\Users\\PC\\AppData\\Local\\Programs\\Microsoft VS Code\\560a9dba96\\resources\\app\\out\\nls.messages.json","locale":"en-us","availableLanguages":{}}
+VSCODE_NLS_CONFIG = {"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"C:\\Users\\PC\\AppData\\Local\\Progra 
+ms\\Microsoft VS Code\\560a9dba96\\resources\\app\\out\\nls.messages.json","locale":"en-us","availableLanguages":{}}
 # environment
 ONEDRIVECONSUMER = C:\Users\PC\OneDrive
 # default
@@ -165,8 +164,6 @@ GNUMAKEFLAGS :=
 # environment
 OS = Windows_NT
 # environment
-__COMPAT_LAYER = DetectorsAppHealth
-# environment
 AMDRMSDKPATH = C:\Program Files\AMD\RyzenMasterSDK\
 # makefile
 .DEFAULT_GOAL := help
@@ -223,7 +220,7 @@ VSCODE_ESM_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD
 # variable set hash-table stats:
-# Load=106/1024=10%, Rehash=0, Collisions=12/138=9%
+# Load=104/1024=10%, Rehash=0, Collisions=11/134=8%
 
 # Pattern-specific Variable Values
 
@@ -231,9 +228,9 @@ PROCESSOR_IDENTIFIER = AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD
 
 # Directories
 
-# . (key d:/teaching/Teaching Lecturer/Spring 2026/Data Science/Lectures/10/Lecture10_Example, mtime 1776621159): 14 files, no impossibilities.
+# . (key d:/teaching/Teaching Lecturer/Spring 2026/Data Science/Lectures/10/Lecture10_Example, mtime 1776621537): 18 files, no impossibilities.
 
-# 14 files, no impossibilities in 1 directories.
+# 18 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -246,42 +243,22 @@ check:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 49):
+#  recipe to execute (from 'Makefile', line 50):
 	black --check src/
 
 models/model.pkl: data/processed/clean_customers.csv configs/config.toml src/models/train.py
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 39):
+#  recipe to execute (from 'Makefile', line 40):
 	$(PYTHON) src/models/train.py --config configs/config.toml
 
 setup:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
 #  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := setup
-# automatic
-# * := 
-# automatic
-# < := 
-# automatic
-# + := 
-# automatic
-# % := 
-# automatic
-# ^ := 
-# automatic
-# ? := 
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=3/13=23%
-#  recipe to execute (from 'Makefile', line 22):
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 23):
 	$(PYTHON) -m pip install -r requirements.txt
 	$(PYTHON) -m pip install -e .
 
@@ -292,27 +269,30 @@ src/models/train.py:
 #  File has not been updated.
 
 reports: reports/metrics.json
+#  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  Modification time never checked.
+#  File does not exist.
 #  File has not been updated.
 
 lint:
+#  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  Modification time never checked.
+#  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 52):
+#  recipe to execute (from 'Makefile', line 53):
 	flake8 src/
 
 train: models/model.pkl
+#  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  Modification time never checked.
+#  File does not exist.
 #  File has not been updated.
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
 #  File is secondary (prerequisite of .SECONDARY).
-#  Last modified 2026-04-19 19:45:34
+#  Last modified 2026-04-19 21:21:06
 #  File has been updated.
 #  Successfully updated.
 
@@ -320,7 +300,7 @@ reports/metrics.json: data/processed/clean_customers.csv configs/config.toml src
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 39):
+#  recipe to execute (from 'Makefile', line 40):
 	$(PYTHON) src/models/train.py --config configs/config.toml
 
 # Not a target:
@@ -334,7 +314,7 @@ clean:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 59):
+#  recipe to execute (from 'Makefile', line 62):
 	rm -rf data/processed/ models/ reports/ __pycache__ src/**/__pycache__
 
 # Not a target:
@@ -343,14 +323,15 @@ clean:
 #  Modification time never checked.
 #  File has not been updated.
 
-all: setup isort check lint format train
+all: isort format check lint test reports
+#  Phony target (prerequisite of .PHONY).
 #  Command line target.
-#  Implicit rule search has been done.
+#  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
 
 help:
 #  Phony target (prerequisite of .PHONY).
@@ -369,10 +350,12 @@ help:
 	@echo "  make lint     - Run linter"
 	@echo "  make isort    - Sort imports with isort"
 	@echo "  make all      - Run everything (setup, format, check, lint, train)"
+	@echo "  make test     - Run tests"
 
 data: data/processed/clean_customers.csv
+#  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  Modification time never checked.
+#  File does not exist.
 #  File has not been updated.
 
 # Not a target:
@@ -385,8 +368,16 @@ data/processed/clean_customers.csv: data/raw/customers.csv configs/config.toml s
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 32):
+#  recipe to execute (from 'Makefile', line 33):
 	$(PYTHON) src/data/preprocess.py --config configs/config.toml
+
+test:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 59):
+	pytest tests/ -v
 
 # Not a target:
 data/raw/customers.csv:
@@ -399,7 +390,7 @@ format:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 46):
+#  recipe to execute (from 'Makefile', line 47):
 	black src/
 
 # Not a target:
@@ -408,32 +399,53 @@ format:
 #  Modification time never checked.
 #  File has not been updated.
 
-.PHONY: help setup format check clean
+.PHONY: help setup format check clean lint isort test all reports data train
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 isort:
+#  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 55):
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := isort
+# automatic
+# * := 
+# automatic
+# < := 
+# automatic
+# + := 
+# automatic
+# % := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  recipe to execute (from 'Makefile', line 56):
 	isort src/
 
 # files hash-table stats:
-# Load=22/1024=2%, Rehash=0, Collisions=0/64=0%
+# Load=23/1024=2%, Rehash=0, Collisions=0/75=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 34 / storage = 377 B / avg = 11 B
-# current buf: size = 8174 B / used = 377 B / count = 34 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 39 / storage = 422 B / avg = 10 B
+# current buf: size = 8174 B / used = 422 B / count = 39 / avg = 10 B
 
-# strcache performance: lookups = 72 / hit rate = 52%
+# strcache performance: lookups = 85 / hit rate = 54%
 # hash-table stats:
-# Load=34/8192=0%, Rehash=0, Collisions=0/72=0%
-# Finished Make data base on Sun Apr 19 19:52:41 2026
+# Load=39/8192=0%, Rehash=0, Collisions=0/85=0%
+# Finished Make data base on Sun Apr 19 21:21:31 2026
 
  
