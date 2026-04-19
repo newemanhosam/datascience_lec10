@@ -10,7 +10,7 @@ jobs:
         env:
             # This is how you can set environment variables in GitHub Actions. 
             # You can access these in your code using os.environ.get("DATA_PATH") for example.
-            ENVIRONMENT: ${{vars.model_version}}
+            ENVIRONMENT: ${{vars.ENVIRONMENT}}
             model_version: ${{vars.MODEL_VERSION}}
     
         steps:
