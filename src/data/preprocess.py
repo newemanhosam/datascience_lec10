@@ -5,7 +5,7 @@ import tomllib
 from pathlib import Path
 
 import pandas as pd
-
+import numpy as np
 
 def load_raw_data(filepath: str) -> pd.DataFrame:
     """Load raw CSV data."""
