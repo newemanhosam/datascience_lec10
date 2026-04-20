@@ -4,8 +4,9 @@ import argparse
 import tomllib
 from pathlib import Path
 
-import pandas as pd
 import numpy as np
+import pandas as pd
+
 
 def load_raw_data(filepath: str) -> pd.DataFrame:
     """Load raw CSV data."""
