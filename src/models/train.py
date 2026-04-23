@@ -64,7 +64,7 @@ if __name__ == "__main__":
     # Load environment variables from .env
     load_dotenv(Path(__file__).parent.parent.parent / ".env")
 
-    environment = os.getenv("ENVIRONMENT", "development")
+    environment = os.getenv("ENVIRONMENT", "development2")
     model_version = os.getenv("MODEL_VERSION", "v1")
 
     print(f"Environment : {environment}")
