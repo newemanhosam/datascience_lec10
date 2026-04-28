@@ -14,7 +14,7 @@ def load_raw_data(filepath: str) -> pd.DataFrame:
 
 def clean_data(df: pd.DataFrame, feature_columns: list[str]) -> pd.DataFrame:
     """Drop nulls and return only needed columns."""
-    all_columns = feature_columns + ["churn55"]
+    all_columns = feature_columns + ["churn"]
     return df[all_columns].dropna()
 
 
