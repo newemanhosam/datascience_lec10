@@ -1,10 +1,10 @@
 """Preprocess raw customer data."""
 
 import argparse
-import tomllib
 from pathlib import Path
 
 import pandas as pd
+import tomllib
 
 
 def load_raw_data(filepath: str) -> pd.DataFrame:
@@ -33,7 +33,7 @@ if __name__ == "__main__":
     # with argparse you can pass it from outside:
     # python src/data/preprocess.py --config configs/config.toml
     # python src/data/preprocess.py --config configs/config_v2.toml  # easy to
-    # swap!
+    # swap!!!
     parser.add_argument("--config", default="configs/config.toml")
     args = parser.parse_args()
 
